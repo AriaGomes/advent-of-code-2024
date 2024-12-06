@@ -27,8 +27,6 @@ const main = () => {
 
     const visited = new Set<string>();
     visited.add(`${guardRow},${guardCol}`);
-    console.log(visited);
-
 
     while (true) {
         const [rowOffset, colOffset] = directions[direction];

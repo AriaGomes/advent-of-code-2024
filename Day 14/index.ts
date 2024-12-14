@@ -271,7 +271,7 @@ const main2 = () => {
     for (let i = 0; i < 100000; i++) {
         movePoints()
         if (part2FindAnomaly() >= 50) {
-            console.log("Anomaly found at second: ", i)
+            console.log("Anomaly found at second: ", i + 1)
             printGrid()
         }
     }

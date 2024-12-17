@@ -142,13 +142,13 @@ const main2 = () => {
                 return i
             }
 
-            console.log(i, test)
-
             if (expected.endsWith(test)) {
                 i = i * 8n
             } else {
                 i++
             }
+
+            console.log(i, test)
         }
     }
 
@@ -156,9 +156,9 @@ const main2 = () => {
     return partTwo(input);
 }
 
-console.log(main2());
+console.log(main());
 
-// Old pt2 
+// Old pt2 bruteforce slow 
 // const main2 = () => {
 //     const combo = (operand: number, registers: number[]): number => {
 //         return operand < 4 ? operand : registers[operand - 4];
